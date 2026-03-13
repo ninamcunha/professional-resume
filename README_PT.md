@@ -103,7 +103,9 @@ Este repositório pode ser usado como:
 
 Preview em português:
 
-![Preview do Currículo em Português](./preview_pt.png)
+<p align="center">
+  <img src="./docs/preview_pt.png" width="650">
+</p>
 
 Você também pode abrir o PDF completo diretamente:
 

@@ -103,7 +103,9 @@ This repository can be used as:
 
 English version preview:
 
-![English Resume Preview](./preview_en.png)
+<p align="center">
+  <img src="./docs/preview_en.png" width="650">
+</p>
 
 You can also open the full PDF directly:
 
