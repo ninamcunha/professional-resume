@@ -40,23 +40,23 @@ export interface Certification {
 }
 
 // Import icons
-import stoneIcon from '@/assets/d1a8084a4b5a7adf2da5583b5b8c50b880f05a1f.png';
-import amoooraIcon from '@/assets/16a5e7346ab0f62c4cd3ced3ba0192bd3923149a.png';
-import scholarIcon from '@/assets/2aa857cf6ac5618c90180418d672feaca6742134.png';
-import fhiIcon from '@/assets/8d6602807a07d60578ef570823dad21276176798.png';
-import stanfordIcon from '@/assets/82958931906dea35e6b501b05ce3be039b3c15d0.png';
-import movvaIcon from '@/assets/5b835338521f91ea1cb0080d3760c6bce98e4dcb.png';
-import fgvIcon from '@/assets/123795b22d53c0b4626958f4a6484abc6966d7df.png';
-import ufmgIcon from '@/assets/92eeb2cc6aa078aa2d1519b3d7e6e37c7d8bb7a3.png';
-import stanfordEduIcon from '@/assets/f5c18b64762491d29d7f706a7895328ebf2cfd6d.png';
-import leWagonIcon from '@/assets/966be4d6af1844c9b75dff05eba73ab54f03999b.png';
-import googleIcon from '@/assets/ce57898c0f04d53fbdd8352b7ee5d530290e572e.png';
-import michiganIcon from '@/assets/5698977fafefb5b2f8e78fa93b2313995602511d.png';
-import uspIcon from '@/assets/e1448b1970ce12a60475a8a66b6dec4229bf9ad2.png';
-import statisticalHorizonsIcon from '@/assets/e4a85f5029a7dfb00e6cb1e80665958acff6cc2e.png';
-import centerStatIcon from '@/assets/95a9e14f43d34c721358ca018306a4f9366e1913.png';
+import stoneIcon from '@/assets/icon_expe_stone.png';
+import amoooraIcon from '@/assets/icon_expe_amooora.jpg';
+import scholarIcon from '@/assets/icon_expe_scholar_launch.png';
+import fhiIcon from '@/assets/icon_expe_fhi.png';
+import stanfordIcon from '@/assets/icon_expe_stanford.png';
+import movvaIcon from '@/assets/icon_expe_movva.jpeg';
+import fgvIcon from '@/assets/icon_educ_fgv.jpeg';
+import ufmgIcon from '@/assets/icon_educ_ufmg.jpeg';
+import stanfordEduIcon from '@/assets/icon_educ_stanford.png';
+import leWagonIcon from '@/assets/icon_educ_le_wagon.jpeg';
+import googleIcon from '@/assets/icon_cert_google.png';
+import michiganIcon from '@/assets/icon_cert_michigan.jpeg';
+import uspIcon from '@/assets/icon_cert_usp.png';
+import statisticalHorizonsIcon from '@/assets/icon_cert_statistical_horizons.png';
+import centerStatIcon from '@/assets/icon_cert_center_stat.png';
 import figmaIcon from '@/assets/db6ecd5b783762893bd340e449133e2c99b00e69.png';
-import aiCreativeBuildersIcon from '@/assets/af83bfb07a5b49336728cfe58a5d894f6c02e388.png';
+import aiCreativeBuildersIcon from '@/assets/icon_cert_ai_creative_builders.png';
 
 export const experiencesPT: Experience[] = [
   {
