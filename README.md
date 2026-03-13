@@ -29,18 +29,6 @@ https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_
 
 ---
 
-# Preview
-
-You can preview the resume directly through the generated PDF:
-
-English version  
-https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_EN.pdf
-
-Portuguese version  
-https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_PT.pdf
-
----
-
 # Features
 
 • bilingual resume support (EN / PT)  

@@ -29,18 +29,6 @@ https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_
 
 ---
 
-# Preview
-
-Você pode visualizar o currículo diretamente através do PDF:
-
-Inglês  
-https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_EN.pdf
-
-Português  
-https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_PT.pdf
-
----
-
 # Funcionalidades
 
 • suporte bilíngue (PT / EN)  
