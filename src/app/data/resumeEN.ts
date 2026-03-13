@@ -55,7 +55,7 @@ import michiganIcon from '@/assets/icon_cert_michigan.jpeg';
 import uspIcon from '@/assets/icon_cert_usp.png';
 import statisticalHorizonsIcon from '@/assets/icon_cert_statistical_horizons.png';
 import centerStatIcon from '@/assets/icon_cert_center_stat.png';
-import figmaIcon from '@/assets/db6ecd5b783762893bd340e449133e2c99b00e69.png';
+import figmaIcon from '@/assets/icon_cert_figma.png';
 import aiCreativeBuildersIcon from '@/assets/icon_cert_ai_creative_builders.png';
 
 export const experiencesEN: Experience[] = [
