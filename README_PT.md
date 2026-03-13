@@ -147,15 +147,12 @@ https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_
 
 ```text
 professional-resume
-├── ATTRIBUTIONS.md
-├── README.md
-├── README_PT.md
-├── guidelines
-│   └── Guidelines.md
-├── index.html
-├── package-lock.json
-├── package.json
-├── postcss.config.mjs
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── docs
+│   ├── preview_en.png
+│   └── preview_pt.png
 ├── public
 │   └── pdfs
 │       ├── Nina_Menezes_Cunha_Resume_EN.pdf
@@ -164,18 +161,22 @@ professional-resume
 │   ├── app
 │   │   ├── App.tsx
 │   │   ├── components
-│   │   ├── data
-│   │   │   ├── resumeEN.ts
-│   │   │   └── resumePT.ts
-│   │   └── data.ts
+│   │   └── data
+│   │       ├── resumeEN.ts
+│   │       └── resumePT.ts
 │   ├── assets
-│   ├── main.tsx
-│   └── styles
-│       ├── fonts.css
-│       ├── index.css
-│       ├── tailwind.css
-│       └── theme.css
-└── vite.config.ts
+│   ├── styles
+│   └── main.tsx
+├── ATTRIBUTIONS.md
+├── guidelines
+│   └── Guidelines.md
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── vite.config.ts
+├── README.md
+└── README_PT.md
 ```
 
 ### Arquivos Principais

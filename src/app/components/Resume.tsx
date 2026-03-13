@@ -156,7 +156,7 @@ const Resume = React.forwardRef<HTMLDivElement, ResumeProps>(({
         </header>
 
         {/* MOBILE VERSION - Hidden on desktop */}
-        <div className="flex flex-col gap-5 md:hidden">
+        <div className="flex flex-col gap-5 md:hidden print:hidden">
           {/* 1. Summary */}
           <section>
             <h3 className="text-base font-extrabold text-red-900 border-b-4 border-red-900 mb-2.5 uppercase tracking-wide">{sections.summary}</h3>
@@ -338,7 +338,7 @@ const Resume = React.forwardRef<HTMLDivElement, ResumeProps>(({
         </div>
 
         {/* DESKTOP VERSION - Hidden on mobile */}
-        <div className="hidden md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-5">
+        <div className="hidden md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-5 print:grid print:grid-cols-2 print:gap-x-4 print:gap-y-5">
           {/* LEFT COLUMN */}
           <div className="flex flex-col gap-5">
             {/* Experience */}
