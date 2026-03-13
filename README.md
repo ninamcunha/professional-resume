@@ -1,525 +1,342 @@
-# 📄 Professional Resume - React/TypeScript
+🇺🇸 English | [🇧🇷 Português](./README_PT.md)
 
-<div align="center">
+# Professional Resume Template
 
-![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.12-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6.3.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+A bilingual professional resume template built with **React, TypeScript, and Vite**, designed to be easily customized and deployed with **GitHub Pages**.
 
-**Bilingual professional resume (PT/EN) with high-fidelity PDF export**
+**Live Demo**  
+https://ninamcunha.github.io/professional-resume/
 
-[🌐 Live Demo](#) | [📥 Download PDF](#) | [🐛 Report Bug](../../issues) | [✨ Request Feature](../../issues)
+**PDF Downloads**
 
-</div>
-
----
-
-## 📋 Table of Contents
-
-- [About the Project](#-about-the-project)
-- [Features](#-features)
-- [Technologies Used](#-technologies-used)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [How to Use](#-how-to-use)
-- [Customization](#-customization)
-- [PDF Export](#-pdf-export)
-- [Deployment](#-deployment)
-- [License](#-license)
+- English:  
+  https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_EN.pdf
+- Portuguese:  
+  https://ninamcunha.github.io/professional-resume/pdfs/Nina_Menezes_Cunha_Resume_PT.pdf
 
 ---
 
-## 🎯 About the Project
+## Preview
 
-This is an **interactive professional resume** built with React/TypeScript, specifically designed for tech professionals. The project offers a modern and responsive visual experience, with language toggle functionality (Portuguese/English) and PDF export with **100% visual fidelity**.
+Add a screenshot to the root of the repository, for example:
 
-### 🎨 Design & Layout
-
-- **Two perfectly structured pages** - Optimized layout for content distribution
-- **Professional colors** - Dark red/wine titles (`#7f1d1d`), orange highlights (`#ea580c`)
-- **Integrated icons** - Lucide React library for consistent visual elements
-- **Dashed lines** - Elegant separators between sections
-- **Smart spacing** - Language-specific adjustments to optimize visual distribution
-
-### 📱 Responsiveness
-
-- **Mobile-First** - Adapted layout for phones and tablets
-- **Desktop Optimized** - 125% zoom applied only on large screens for better readability
-- **Perfect Print** - Dedicated CSS to ensure impeccable PDF formatting
-
----
-
-## ✨ Features
-
-### 🌍 Complete Bilingual System
-
-- **PT/EN Toggle** - Button in the top right corner with language icon
-- **Dynamic Content** - All texts, sections, and information change instantly
-- **Separate Data** - Independent files (`resumePT.ts` and `resumeEN.ts`)
-- **Differentiated File Names** - PDFs exported with language-specific names
-
-### 📥 PDF Export
-
-- **High Fidelity** - 100% visual correspondence between screen and PDF
-- **Exactly Two Pages** - Automatic and optimized content distribution
-- **Advanced Print CSS** - Specific media queries for printing
-- **window.print()** - Native solution without heavy external dependencies
-- **Smart Names** - Files saved as `Curriculo_Nina_Menezes_Cunha.pdf` (PT) or `Resume_Nina_Menezes_Cunha.pdf` (EN)
-
-### 📊 Resume Sections
-
-1. **Header** - Name, title, email, LinkedIn, GitHub, portfolio
-2. **Professional Summary** - Executive presentation
-3. **Experience** - 6 positions with logos, dates, location, and descriptions
-4. **Publications & Projects** - 7 featured items with clickable links
-5. **Education** - 4 institutions with logos and details
-6. **Certifications** - 10 certificates with institutions, dates, and credentials
-7. **Skills** - Categories with dynamic icons
-
-### 🎨 Smart Layout
-
-- **Desktop**: 2-column layout (experience/publications on left, summary/education/skills/certifications on right)
-- **Mobile**: Single column layout with optimized order
-- **Language Adjustments**: Specific spacing (PT: 0.95rem, EN: 0.5rem in experiences)
-
----
-
-## 🛠 Technologies Used
-
-### Core
-
-| Technology | Version | Description |
-|------------|---------|-------------|
-| **React** | 18.3.1 | JavaScript library for user interfaces |
-| **TypeScript** | 5.x | Typed superset of JavaScript |
-| **Vite** | 6.3.5 | Modern and fast build tool |
-| **Tailwind CSS** | 4.1.12 | Utility-first CSS framework |
-
-### Main Libraries
-
-| Library | Version | Project Use |
-|---------|---------|-------------|
-| **lucide-react** | 0.487.0 | SVG icons (Mail, LinkedIn, GitHub, etc.) |
-| **@radix-ui/** | Multiple | Accessible UI components (base) |
-| **class-variance-authority** | 0.7.1 | CSS class management |
-| **tailwind-merge** | 3.2.0 | Smart merging of Tailwind classes |
-
-### Extra Features
-
-- **react-router** (7.13.0) - Routing (if needed for expansion)
-- **motion** (12.23.24) - Smooth animations
-- **date-fns** (3.6.0) - Date manipulation
-- **sonner** (2.0.3) - Toast notifications
-
----
-
-## 📁 Project Structure
-
-```
-📦 professional-resume
-├── 📂 src
-│   ├── 📂 app
-│   │   ├── 📄 App.tsx                    # Main component with language logic and PDF
-│   │   ├── 📂 components
-│   │   │   ├── 📄 Resume.tsx             # Resume component with mobile/desktop layouts
-│   │   │   ├── 📄 ResumePDF.tsx          # [Legacy] Previous PDF component
-│   │   │   ├── 📂 figma
-│   │   │   │   └── 📄 ImageWithFallback.tsx  # [System] Image component
-│   │   │   └── 📂 ui                     # UI components (Radix + Tailwind)
-│   │   │       ├── 📄 button.tsx
-│   │   │       ├── 📄 card.tsx
-│   │   │       └── ... (50+ components)
-│   │   └── 📂 data
-│   │       ├── 📄 resumePT.ts            # Resume data in Portuguese
-│   │       ├── 📄 resumeEN.ts            # Resume data in English
-│   │       └── 📄 resume.ts              # [Legacy] Old data
-│   └── 📂 styles
-│       ├── 📄 index.css                  # Global CSS
-│       ├── 📄 tailwind.css               # Tailwind configurations
-│       ├── 📄 theme.css                  # Theme tokens
-│       └── 📄 fonts.css                  # Font imports
-├── 📄 package.json                       # Dependencies and scripts
-├── 📄 vite.config.ts                     # Vite configuration
-├── 📄 postcss.config.mjs                 # PostCSS configuration
-└── 📄 README.md                          # This file
+```md
+![Professional Resume Preview](./preview.png)
 ```
 
-### 🗂 Main Files
+---
 
-#### **`/src/app/App.tsx`**
-- Application root component
-- Manages language state (`pt` | `en`)
-- Implements `downloadPDF()` function with `window.print()`
-- Applies 125% zoom on desktop (`md:scale-125`)
-- Defines PDF filename dynamically
+## About
 
-#### **`/src/app/components/Resume.tsx`**
-- Main resume component
-- Receives data via typed props (`ResumeProps`)
-- Contains 2 layouts: mobile (`.md:hidden`) and desktop (`.hidden.md:grid`)
-- Dynamic icons based on categories
-- Print styles with `print:` utilities
+This project started as a resume created in Figma Make and was later reorganized into a cleaner public GitHub repository so it can be reused as a template.
 
-#### **`/src/app/data/resumePT.ts` and `/src/app/data/resumeEN.ts`**
-- TypeScript objects with all content
-- Structures: `header`, `summary`, `experiences`, `education`, `skillCategories`, `publications`, `certifications`
-- Company/institution logos in base64 or URLs
+It includes:
+
+- bilingual resume support
+- printable layout
+- downloadable PDF versions
+- GitHub Pages deployment
+- structured resume data separated from UI
+
+This repository can be used as:
+
+- your own online resume
+- a professional CV template
+- a starting point for a public personal profile
 
 ---
 
-## 🚀 Installation
+## Tech Stack
 
-### Prerequisites
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- GitHub Pages
 
-- **Node.js** 18+ ([Download](https://nodejs.org/))
-- **pnpm** (recommended) or npm/yarn
+---
 
-```bash
-# Install pnpm (if you don't have it)
-npm install -g pnpm
+## Project Structure
+
+```text
+professional-resume
+├── public
+│   └── pdfs
+│       ├── Nina_Menezes_Cunha_Resume_EN.pdf
+│       └── Nina_Menezes_Cunha_Resume_PT.pdf
+├── src
+│   ├── app
+│   │   ├── components
+│   │   ├── data
+│   │   │   ├── resumeEN.ts
+│   │   │   └── resumePT.ts
+│   │   └── App.tsx
+│   ├── assets
+│   ├── styles
+│   └── main.tsx
+├── README.md
+├── README_PT.md
+├── package.json
+└── vite.config.ts
 ```
 
-### Installation Steps
+---
 
-1. **Clone the repository**
+## Run Locally
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/your-username/professional-resume.git
 cd professional-resume
 ```
 
-2. **Install dependencies**
+### 2. Install dependencies
 
 ```bash
-pnpm install
+npm install
 ```
 
-3. **Start the development server**
+### 3. Start the development server
 
 ```bash
-pnpm dev
+npm run dev
 ```
 
-4. **Open in browser**
+### 4. Open in your browser
 
-```
+```text
 http://localhost:5173
 ```
 
----
-
-## 💻 How to Use
-
-### 1️⃣ Toggle Languages
-
-Click the **PT/EN** button in the top right corner of the resume. The content will change instantly.
-
-### 2️⃣ Export to PDF
-
-**Option 1: Download Button** (if implemented)
-- Click the download button
-- The browser will open the print dialog
-- Select "Save as PDF"
-
-**Option 2: Manual**
-```bash
-Ctrl+P (Windows/Linux) or Cmd+P (Mac)
-```
-
-### 3️⃣ View on Desktop
-
-The resume automatically applies **125% zoom** on large screens (≥768px) for better readability. On mobile, it remains 100%.
-
-### 4️⃣ View on Mobile
-
-The layout adapts to a single column with:
-- Each contact link on a separate line
-- Sections stacked vertically
-- Optimized spacing
+If the browser does not open automatically, copy and paste the local URL shown in the terminal.
 
 ---
 
-## 🎨 Customization
+## Build Locally
 
-### Change Personal Data
-
-Edit the files `/src/app/data/resumePT.ts` and `/src/app/data/resumeEN.ts`:
-
-```typescript
-export const resumePT = {
-  header: {
-    name: "YOUR NAME",
-    title: "Your Professional Title",
-    email: "your.email@example.com",
-    linkedin: "https://linkedin.com/in/your-profile",
-    github: "https://github.com/your-username",
-    portfolio: "https://your-portfolio.com"
-  },
-  summary: "Your professional summary here...",
-  experiences: [
-    {
-      role: "Position",
-      company: "Company",
-      period: "Jan 2023 - Present",
-      location: "City, Country",
-      description: ["Responsibility 1", "Responsibility 2"],
-      logo: "URL_OR_BASE64"
-    }
-  ],
-  // ... continue with other sections
-};
-```
-
-### Change Colors
-
-Edit `/src/styles/theme.css` or use Tailwind classes directly:
-
-```css
-/* Main title color */
-.text-red-900 → Change to .text-blue-900
-
-/* Highlight color */
-.text-orange-600 → Change to .text-green-600
-
-/* Borders */
-.border-red-900 → Change to .border-blue-900
-```
-
-### Adjust Spacing
-
-In the file `/src/app/App.tsx`, inside the `<style>` tag:
-
-```css
-/* Spacing between experiences (PT) */
-[data-language="pt"] #resume-content > div > div > section:nth-child(2) > div > div {
-  margin-bottom: 0.95rem; /* Adjust value */
-}
-
-/* Spacing between experiences (EN) */
-[data-language="en"] #resume-content > div > div > section:nth-child(2) > div > div {
-  margin-bottom: 0.5rem; /* Adjust value */
-}
-```
-
-### Add New Sections
-
-1. Add data to `resumePT.ts` and `resumeEN.ts`
-2. Create JSX structure in `Resume.tsx`
-3. Add icons from `lucide-react` library
-4. Style with Tailwind CSS
-
----
-
-## 📄 PDF Export
-
-### How It Works
-
-The system uses **`window.print()`** combined with **print CSS** to generate PDFs:
-
-```typescript
-const downloadPDF = () => {
-  const fileName = language === 'pt' 
-    ? 'Curriculo_Nina_Menezes_Cunha.pdf' 
-    : 'Resume_Nina_Menezes_Cunha.pdf';
-
-  const style = document.createElement('style');
-  style.innerHTML = `@page { size: A4; margin: 0; }`;
-  document.head.appendChild(style);
-
-  document.title = fileName.replace('.pdf', '');
-  window.print();
-  
-  document.head.removeChild(style);
-};
-```
-
-### Print CSS
-
-Tailwind classes with `print:` prefix:
-
-```jsx
-<div className="print:shadow-none print:max-w-none print:p-3 print:m-0">
-  <button className="print:hidden">Button that doesn't appear in PDF</button>
-</div>
-```
-
-### Optimizations
-
-- **`@page { size: A4; margin: 0; }`** - Defines exact page size
-- **`print:scale-100`** - Removes desktop zoom in PDF
-- **Page breaks** - Avoided with adjusted spacing
-- **Colors maintained** - `-webkit-print-color-adjust: exact`
-
-### Troubleshooting
-
-**Problem**: PDF appears in more than 2 pages
-- **Solution**: Adjust language-specific spacing
-
-**Problem**: Colors don't appear in PDF
-- **Solution**: Add `-webkit-print-color-adjust: exact;` to CSS
-
-**Problem**: Broken layout in PDF
-- **Solution**: Check `print:` classes and `@media print` media query
-
----
-
-## 🌐 Deployment
-
-### Deployment Options
-
-#### **Vercel** (Recommended)
+To generate a production build:
 
 ```bash
-# Install Vercel CLI
-pnpm install -g vercel
-
-# Deploy
-vercel
+npm run build
 ```
 
-#### **Netlify**
+To preview the production build locally:
 
 ```bash
-# Build
-pnpm build
-
-# Drag the 'dist' folder to Netlify Drop
+npm run preview
 ```
 
-#### **GitHub Pages**
+---
 
-1. Add to `vite.config.ts`:
+## Deploy to GitHub Pages
 
-```typescript
-export default defineConfig({
-  base: '/professional-resume/', // Your repository name
-  // ... other configs
-});
+Run:
+
+```bash
+npm run deploy
 ```
 
-2. Add script to `package.json`:
+Then go to:
+
+**Repository → Settings → Pages**
+
+Configure:
+
+- **Source:** Deploy from a branch
+- **Branch:** `gh-pages`
+- **Folder:** `/(root)`
+
+Your final URL will look like this:
+
+```text
+https://your-username.github.io/your-repository-name/
+```
+
+---
+
+## How to Replicate This Resume
+
+This section is for anyone who wants to reuse the project for their own resume.
+
+### Step 1 — Clone or fork the repository
+
+You can either:
+
+- fork the repository on GitHub, or
+- clone it directly and create your own repository from it
+
+```bash
+git clone https://github.com/your-username/professional-resume.git
+cd professional-resume
+```
+
+### Step 2 — Install dependencies
+
+```bash
+npm install
+```
+
+### Step 3 — Update the project name
+
+Open `package.json` and change the name, for example:
 
 ```json
-"scripts": {
-  "deploy": "vite build && gh-pages -d dist"
-}
+"name": "my-professional-resume"
 ```
 
-3. Execute:
+Then run:
 
 ```bash
-pnpm install -D gh-pages
-pnpm deploy
+npm install
+```
+
+### Step 4 — Replace the resume content
+
+Edit these files:
+
+```text
+src/app/data/resumeEN.ts
+src/app/data/resumePT.ts
+```
+
+These files contain the structured content for each language, including:
+
+- header
+- summary
+- experience
+- education
+- certifications
+- skills
+- projects/publications
+
+### Step 5 — Replace logos and visual assets
+
+Update the files inside:
+
+```text
+src/assets
+```
+
+You can replace:
+
+- company logos
+- education logos
+- certification logos
+
+Keep filenames readable and update imports in `resumeEN.ts` and `resumePT.ts` when needed.
+
+### Step 6 — Replace exported PDFs
+
+Put your final PDFs here:
+
+```text
+public/pdfs
+```
+
+Example:
+
+```text
+public/pdfs/My_Resume_EN.pdf
+public/pdfs/My_Resume_PT.pdf
+```
+
+Files inside `public/` are served directly by Vite and GitHub Pages.
+
+### Step 7 — Adjust the GitHub Pages base path
+
+Open:
+
+```text
+vite.config.ts
+```
+
+Make sure this line matches your repository name:
+
+```ts
+base: '/professional-resume/',
+```
+
+If your repository is called `my-professional-resume`, then change it to:
+
+```ts
+base: '/my-professional-resume/',
+```
+
+### Step 8 — Install the deploy dependency
+
+If it is not already installed:
+
+```bash
+npm install -D gh-pages
+```
+
+### Step 9 — Build and deploy
+
+```bash
+npm run build
+npm run deploy
+```
+
+### Step 10 — Enable GitHub Pages
+
+On GitHub, open your repository and go to:
+
+**Settings → Pages**
+
+Then configure:
+
+- **Source:** Deploy from a branch
+- **Branch:** `gh-pages`
+- **Folder:** `/(root)`
+
+### Step 11 — Open your published resume
+
+Your final URL will look like this:
+
+```text
+https://your-username.github.io/your-repository-name/
 ```
 
 ---
 
-## 📦 Available Scripts
+## Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Starts development server |
-| `pnpm build` | Creates production build in `dist/` folder |
-| `pnpm preview` | Preview of production build |
-
----
-
-## 🎓 Technical Details
-
-### TypeScript Interfaces
-
-```typescript
-interface ResumeProps {
-  experiences: Experience[];
-  education: Education[];
-  skillCategories: SkillCategory[];
-  publications: Publication[];
-  certifications: Certification[];
-  summary: string;
-  header: {
-    name: string;
-    title: string;
-    email: string;
-    linkedin: string;
-    github: string;
-    portfolio: string;
-  };
-  sections: {
-    experience: string;
-    summary: string;
-    skills: string;
-    education: string;
-    publications: string;
-    certifications: string;
-  };
-  language: 'pt' | 'en';
-  onLanguageToggle: () => void;
-}
-```
-
-### Responsive Breakpoints
-
-- **Mobile**: `< 768px` - Single column layout
-- **Desktop**: `≥ 768px` (`.md:`) - 2-column layout + 125% zoom
-- **Print**: Media query `@media print` - PDF-optimized layout
-
-### Dynamic Icons
-
-```typescript
-const getSkillIcon = (title: string) => {
-  const lowerTitle = title.toLowerCase();
-  if (lowerTitle.includes('programm')) return <Database />;
-  if (lowerTitle.includes('data')) return <Cpu />;
-  if (lowerTitle.includes('machine')) return <Briefcase />;
-  // ... more conditions
-  return <Code />; // default icon
-};
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run deploy
 ```
 
 ---
 
-## 🤝 Contributing
+## Notes
 
-Contributions are welcome! Feel free to:
-
-1. **Fork** the project
-2. Create a **Branch** for your feature (`git checkout -b feature/NewFeature`)
-3. **Commit** your changes (`git commit -m 'Add new feature'`)
-4. **Push** to the Branch (`git push origin feature/NewFeature`)
-5. Open a **Pull Request**
+- The `public/` folder is exposed at the site root.
+- The `gh-pages` branch is created when you run `npm run deploy`.
+- If the page opens blank after deployment, the most common cause is an incorrect `base` value in `vite.config.ts`.
 
 ---
 
-## 📝 License
+## Recommended Customization Flow
 
-This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
-
----
-
-## 👤 Author
-
-**Nina Menezes Cunha**
-
-- LinkedIn: [nina-menezes-cunha](https://linkedin.com/in/nina-menezes-cunha)
-- GitHub: [@ninamenezes](https://github.com/ninamenezes)
-- Portfolio: [ninamenezes.com](https://ninamenezes.com)
+1. Update `resumeEN.ts`
+2. Update `resumePT.ts`
+3. Replace logos in `src/assets`
+4. Replace PDFs in `public/pdfs`
+5. Check `vite.config.ts`
+6. Run `npm run build`
+7. Run `npm run deploy`
 
 ---
 
-## 🙏 Acknowledgments
+## License
 
-- [Lucide Icons](https://lucide.dev/) - Icon library
-- [Tailwind CSS](https://tailwindcss.com/) - CSS framework
-- [Radix UI](https://www.radix-ui.com/) - Primitive components
-- [Vite](https://vitejs.dev/) - Build tool
+MIT is a good default option if you want to keep this project public and reusable.
 
 ---
 
-<div align="center">
+## Author
 
-**Made with ❤️ and React**
-
-⭐ If this project helped you, consider giving it a star!
-
-</div>
+Originally adapted and organized by **Nina Menezes Cunha**.
